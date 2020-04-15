@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Resume_Vue</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div id = "resume">
+    <div class = "left">
+      <h1>{{resume.name}}</h1>
+      <h5>{{resume.nameEng}}</h5>
+      <div class = "block">
+      <h4>{{label.basicEng}}</h4>
+      <h2>{{label.basic}}</h2>
+      <hr/>
+          <ul class = "BI">
+            <li v-for = "item in basicContent" :key="item.id">
+              {{item.content}}
+            </li>
+          </ul>
+        <div class = "block">
+        <h4>{{label.contactEng}}</h4>
+        <h2>{{label.contact}}</h2>
+        <hr/>
+        <ul class = "BI">
+          <li v-for = "item in contactContent" :key="item.id">
+          {{item.content}}
+          </li>
+        </ul>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/willy870708" target="_blank">Github</a>
+          <a class="btn"  href="https://www.facebook.com/chen.g.ting.923" target="_blank">Facebook</a>
+        </div>
+        <h4>{{label.skillsEng}}</h4>
+        <h2>{{label.skills}}</h2>
+        <hr/>
+         <ul class = "BI">
+          <li v-for = "item in skillsContent" :key="item.id">
+          {{item.content}}<div class="bar">
+              <div class = "value p"></div>
+            </div>
+          </li>
+         </ul>
+        </div>
+      </div>
+   </div>  
+    <div class = "right">
+       <div class="decoration"></div>
+      <div class = "block">
+                <h4>{{label.experiencesEng}}</h4>
+        <h2>{{label.experiences}}</h2>
+        <hr/> 
+        <ul class = "listExperience">
+            <li class="year">2020
+              <ul>
+                <li v-for = "item in experiencesContent2020" :key="item.id">
+                  {{item.content}}  <label class="import">{{item.position}}</label>
+                </li>
+              </ul>
+            </li>
+            <li class="year">2019
+              <ul>
+                <li v-for = "item in experiencesContent2019" :key="item.id">
+                  {{item.content}}  <label class="import">{{item.position}}</label>
+                </li>
+              </ul>
+            </li>
+            <li class="year">2018
+              <ul>
+                <li v-for = "item in experiencesContent2018" :key="item.id">
+                  {{item.content}}  <label class="import">{{item.position}}</label>
+                </li>
+              </ul>
+            </li>
+            <li class="year">2017
+              <ul>
+                <li v-for = "item in experiencesContent2017" :key="item.id">
+                  {{item.content}}  <label class="import">{{item.position}}</label>
+                </li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+      <div class = "block">
+        <h4>{{label.worksEng}}</h4>
+        <h2>{{label.works}}</h2>
+        <hr/>
+        <ul class = "BI">
+          <li v-for = "item in worksContent" :key="item.id">
+              {{item.content}}
+          </li>
+        </ul>
+      </div>
+   </div>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
