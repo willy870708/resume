@@ -37,11 +37,13 @@
         <h2>{{label.skills}}</h2>
         <hr/>
          <ul class = "BI">
-          <li v-for = "item in skillsContent" :key="item.id">
+           <ul class="listProgram">
+             <li v-for = "item in skillsContent" :key="item.id">
           {{item.content}}<div class="bar">
-              <div class = "value p"></div>
+              <div class = "value" :style="{width: item.level + '%'}"></div>
             </div>
           </li>
+           </ul>
          </ul>
         </div>
       </div>
