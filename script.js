@@ -75,3 +75,14 @@ var vm = new Vue({
     label: label
   }
 })
+
+function changeColor(name){
+  $("#"+name).css({
+      "font-weight": "bolder"
+    });
+}
+function recoverColor(name){
+  $("#"+name).css({
+      "font-weight": "lighter"
+    });
+}
