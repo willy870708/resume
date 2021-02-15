@@ -34,7 +34,10 @@ var skillsContent = [
   {id : 3 , content : "Git" , level : 50},
   {id : 4 , content : "Python" , level : 50},
   {id : 5 , content : "Html/CSS/JS" , level : 50},
-  {id : 6, content : "Jquery" , level : 40}
+  {id : 6, content : "SQL" , level : 50}
+];
+var experiencesContent2021 = [
+  {id : 0 , content : "玉山銀行" , year : 2020 , position : "程式開發人員"},
 ];
 
 var experiencesContent2020 = [
@@ -64,6 +67,7 @@ var experiencesContent2017 = [
 var worksContent =[
   {id : 0, content : "ASP.NET Core 專案開發"},
   {id : 1, content : "ASP.NET MVC 專案開發"},
+  {id : 2, content : "Java Spring boot 網站開發"},
   {id : 2, content : "影像辨識 專案開發"},
   {id : 3, content : "敏捷開發經驗"},
 ]

@@ -15,12 +15,14 @@ ul{
   list-style: none;
 }
 h1{
-  font-weight: 600;
+  font-weight: lighter;
+  color: white;
 }
 h2{
   margin: 0;
   margin-bottom: 20px;
   font-weight: 400;
+  color: white;
 }
 h2::before{
   content: "";
@@ -34,12 +36,18 @@ h4{
   margin: 0;
   margin-top: 40px;
   margin-right: 10px;
+  color: white;
+}
+h5{
+  size:600;
+  font-weight:lighter;
+  color: white;
 }
 h6{
   margin:0;
   margin-top:-20px;
   margin-left:60px;
-  color:	#FFCC22;
+  color: white;
 }
 a{
   color: white;
@@ -64,7 +72,7 @@ hr{
 }
 
 .left{
-  padding-right: 20px;
+  padding-right: 60px;
   border-right: solid 1px #DDAA00;
 }
 
@@ -88,7 +96,6 @@ hr{
 .listExperience>li{
   display: flex;
   margin-bottom: 10px;
-  
 }
 
 .listExperience>li:nth-child(1) ul{
@@ -127,42 +134,9 @@ hr{
 }
 .value{
   height: 100%;
-  width: 10%;
   background-color: #DDAA00;
 }
 
-.value.p10{
-  width: 10%;
-}
-  
-.value.p20{
-  width: 20%;
-}
-.value.p30{
-  width: 30%;
-}
-.value.p40{
-  width: 40%;
-}
-.value.p50{
-  width: 50%;
-}
-.value.p60{
-  width: 60%;
-}
-.value.p70{
-  width: 70%;
-}
-.value.p80{
-  width: 80%;
-}
-.value.p90{
-  width: 90%;
-}
-
-.value.p100{
-  width: 100%;
-}
 
 .btn{
   border: solid 3px #DDAA00;

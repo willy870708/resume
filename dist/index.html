@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Resume_Vue</title>
@@ -8,7 +8,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,18 +19,23 @@
 <body>
   <div id = "resume">
     <div class = "left">
-      <h1>{{resume.name}}</h1>
-      <h5>{{resume.nameEng}}</h5>
+      <div id = "name" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
+        <h1>{{resume.name}}</h1>
+        <h3>{{resume.nameEng}}</h3>
+      </div>
       <div class = "block">
-      <h4>{{label.basicEng}}</h4>
-      <h2>{{label.basic}}</h2>
-      <hr/>
+      <div id = "basic" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
+        <h4>{{label.basicEng}}</h4>
+        <h2>{{label.basic}}</h2>
+        <hr/>
           <ul class = "BI">
             <li v-for = "item in basicContent" :key="item.id">
               {{item.content}}
             </li>
           </ul>
+       </div>
         <div class = "block">
+          <div id = "contact" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
         <h4>{{label.contactEng}}</h4>
         <h2>{{label.contact}}</h2>
         <hr/>
@@ -43,28 +48,39 @@
           <a class="btn" href="https://github.com/willy870708" target="_blank">Github</a>
           <a class="btn"  href="https://www.facebook.com/chen.g.ting.923" target="_blank">Facebook</a>
         </div>
-        <h4>{{label.skillsEng}}</h4>
-        <h2>{{label.skills}}</h2>
-        <hr/>
-         <ul class = "BI">
-           <ul class="listProgram">
-             <li v-for = "item in skillsContent" :key="item.id">
-          {{item.content}}<div class="bar">
-              <div class = "value" :style="{width: item.level + '%'}"></div>
-            </div>
-          </li>
+        </div>
+        <div id = "skills" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
+          <h4>{{label.skillsEng}}</h4>
+          <h2>{{label.skills}}</h2>
+          <hr/>
+           <ul class = "BI">
+             <ul class="listProgram">
+               <li v-for = "item in skillsContent" :key="item.id">
+            {{item.content}}<div class="bar">
+                <div class = "value" :style="{width: item.level + '%'}"></div>
+              </div>
+            </li>
+             </ul>
            </ul>
-         </ul>
+          </div>
         </div>
       </div>
    </div>  
     <div class = "right">
        <div class="decoration"></div>
       <div class = "block">
+        <div id = "experiences" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
                 <h4>{{label.experiencesEng}}</h4>
         <h2>{{label.experiences}}</h2>
         <hr/> 
         <ul class = "listExperience">
+          <li class="year">2021
+              <ul>
+                <li v-for = "item in experiencesContent2021" :key="item.id">
+                  {{item.content}}  <label class="import">{{item.position}}</label>
+                </li>
+              </ul>
+            </li>
             <li class="year">2020
               <ul>
                 <li v-for = "item in experiencesContent2020" :key="item.id">
@@ -95,7 +111,9 @@
             </li>
         </ul>
       </div>
+      </div>
       <div class = "block">
+        <div id = "works" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
         <h4>{{label.worksEng}}</h4>
         <h2>{{label.works}}</h2>
         <hr/>
@@ -104,6 +122,7 @@
               {{item.content}}
           </li>
         </ul>
+        </div>
       </div>
    </div>
 </body>
