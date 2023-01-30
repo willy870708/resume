@@ -1,6 +1,5 @@
 body {
   padding: 50px;
-  justify-content: center;
   background-color: #0b1d2e;
   color: rgba(255, 255, 255, 0.95);
   font-size: 15px;
@@ -63,11 +62,10 @@ hr {
   color: #ffa488;
 }
 #resume {
-  display: flex;
   max-width: 680px;
   border: solid 8px #ffffff;
   padding: 50px;
-  position: relative;
+  display: flex;
 }
 
 .left {
@@ -85,7 +83,7 @@ hr {
   background-image: url("pic/pic.jpg");
   background-size: 100% 100%;
   border-radius: 50px 50px 50px 50px;
-  position: relative;
+  margin-left: 40px;
 }
 
 .listExperience > li {
