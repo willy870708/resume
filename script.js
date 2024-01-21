@@ -36,8 +36,13 @@ var skillsContent = [
   {id : 5 , content : "Python" , level : 50},
   {id : 6 , content : "Html/CSS/JS" , level : 50}
 ];
+
+var experiencesContent2023 = [
+  {id : 0 , content : "臺灣銀行" , year : 2023 , position : "中級辦事員"},
+];
+
 var experiencesContent2021 = [
-  {id : 0 , content : "玉山銀行" , year : 2020 , position : "程式開發人員"},
+  {id : 0 , content : "玉山銀行" , year : 2021 , position : "程式開發人員"},
 ];
 
 var experiencesContent2020 = [

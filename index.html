@@ -36,7 +36,7 @@
         </ul>
         <div class="buttons">
           <a class="btn" href="https://github.com/willy870708" target="_blank">Github</a>
-          <a class="btn"  href="https://www.facebook.com/chen.g.ting.923" target="_blank">Facebook</a>
+          <a class="btn"  href="https://www.linkedin.com/in/%E5%86%A0%E5%BB%B7-%E9%99%B3-3159131aa/" target="_blank">Linkedin</a>
         </div>
         </div>
         <div id = "skills" onmouseenter = "changeColor(this.id)" onmouseleave = "recoverColor(this.id)">
@@ -63,7 +63,14 @@
         <h2>{{label.experiences}}</h2>
         <hr/> 
         <ul class = "listExperience">
-          <li class="year">2021
+          <li class="year">2023
+            <ul>
+              <li v-for = "item in experiencesContent2023" :key="item.id">
+                {{item.content}}  <label class="import">{{item.position}}</label>
+              </li>
+            </ul>
+          </li>
+            <li class="year">2021
               <ul>
                 <li v-for = "item in experiencesContent2021" :key="item.id">
                   {{item.content}}  <label class="import">{{item.position}}</label>
